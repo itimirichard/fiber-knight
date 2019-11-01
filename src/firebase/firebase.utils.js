@@ -1,15 +1,16 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
+import keys from "../config/keys";
 
 const config = {
-  apiKey: "AIzaSyBk4UCZIxkamPELXAL5-CK1RmW78UxjR5o",
-  authDomain: "fiber-knight-db.firebaseapp.com",
-  databaseURL: "https://fiber-knight-db.firebaseio.com",
-  projectId: "fiber-knight-db",
-  storageBucket: "fiber-knight-db.appspot.com",
-  messagingSenderId: "426461235314",
-  appId: "1:426461235314:web:ceaa2cae0aab9448049aeb"
+  apiKey: keys.API_KEY,
+  authDomain: keys.AUTH_DOMAIN,
+  databaseURL: keys.DATABASE_URL,
+  projectId: keys.PROJECT_ID,
+  storageBucket: keys.STORAGE_BUCKET,
+  messagingSenderId: keys.MESSAGING_SENDER,
+  appId: keys.APP_ID
 };
 
 const firebaseApp = firebase.initializeApp(config);
